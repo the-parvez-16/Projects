@@ -1,4 +1,4 @@
-# Project Submission Platform 🚀
+# Project Submission Platform  🚀
 
 Welcome to the **Project Submission Platform**, a place where developers, engineers, and enthusiasts can share and showcase their projects! This platform supports a wide range of projects, including but not limited to:
 
