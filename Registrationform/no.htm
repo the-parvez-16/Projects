@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Registration</title>
+    <style type="text/css">
+        .heading{
+            background-color: black;
+            color: white;
+            font-size:25px;
+            width: 1500px;
+            display: grid;
+            grid-template-columns: 4fr  7fr  1fr;
+        }
+        .heading h3{
+            color: white;
+            
+        }
+        .heading span{
+            padding: 20px;
+        }
+        
+        .sign-in{
+            background-color: white;
+            color:red;
+            border: 1px solid white;
+            border-radius: 12px;
+            padding: 10px;
+            width:80px;
+            height:30px;
+            margin-top: 20px;
+            margin-right: 150px;
+            text-align: center;
+            font-size:15px;
+            
+        }
+        .sign-up{
+            background-color: white;
+            color:black;
+            border: 1px solid white;
+            border-radius: 12px;
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+            margin-top: 20px;
+            margin-right: 0px;
+        }
+        section{
+            
+            margin-top: 30px;
+            border: 1px solid black;
+            border-radius: 3px;
+            display: block;
+            width: 450px;
+            align-items: center;
+            margin-left: 500px;
+            height: 400px;
+            
+            
+        }
+        section button{
+            display: block;
+            text-align: center;
+            margin-left: 130px;
+            padding: 10px;
+            border-radius: 7px;
+            
+            
+        }
+        .email{
+            margin-top: 15px;
+        }
+        .password{
+            margin-top: 15px;
+        }
+
+        .Sign-In{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 200px;
+        }
+        main{
+            margin-top: 70px;
+            display: block;
+            
+            width: 1500px;
+            border: 1px solid black;
+            border-radius: 3px;
+            height: 700px;
+            
+        }
+        .rgform{
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        main div{
+            justify-content: space-between;
+        }
+        .first button{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 12px;
+
+        }
+        .second button{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 12px;
+
+
+        }
+        .name{
+            margin-top: 20px;
+        }
+
+        .name2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .emailg{
+            margin-bottom: 20px;
+        }
+        .dob{
+            margin-bottom: 20px;
+        }
+
+        .resume{
+        
+            
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .time{
+            margin-bottom: 20px;
+        }
+        .week{
+            margin-bottom: 20px;
+        }
+        .submit{
+
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div>
+        <h3>PW IOI LMS WEBSITE</h3>
+        </div>
+        <div>
+        <span>Home</span>
+        <span>Blog</span>
+        <span>Services</span>
+        <span>About</span>
+        </div>
+        <div>
+        <button class="sign-in">Sign-In</button>
+        <button class="Sign-up">Sign-Up</button>
+        </div>
+
+    </header>
+    <section align="center">
+        <h4>Don't have a account?<b>Sign-Up</b></h4>
+        <h2>Login</h2>
+        <label for="email">E-mail</label>
+        <button class="email">
+            <input type="email" name="txtEmail" placeholder="r0500482@gmail.com">
+        </button>
+        <label for="password">Password</label>
+        <button class="password">
+            <input type="password" name="txtPwd" placeholder="Enter Password" pattern="[A-Z]{4,14}" minlength="8" maxlength="15">
+        </button>
+        <label for="Sign-In">Sign-In</label>
+        <button class="Sign-In">
+            Sign-In
+        </button>
+
+        <span>Forget password?</span>
+    </section>
+
+    <h1 class="rgform">Registration Form</h1>
+
+    <main align="center">
+        
+        <div class="first">
+            <span>First Name</span>
+            <button class="name">
+                <input type="text" name="txtTest" placeholder="Riyanshi" pattern="[A-Z][A-Z a-z]{4.14}">
+            </button><br>
+             
+            <span>Last Name</span>
+            <button class="name2">
+                <input type="text" name="txtTest" placeholder="Tomar" pattern="[A-Z][A-Z a-z]{4.14}">
+            </button><br>
+
+            <span>Email</span>
+            <button class="emailg">
+                <input type="email" name="txtEmail" placeholder="r0500482@gmail.com">
+            </button><br>
+
+            <span>D.O.B</span>
+            <button class="dob">
+                <input type="date" name="txtDate">
+            </button><br>
+
+            <span>Gender</span>
+            <input type="radio" name="gender" value="MALE"><label>male</label>
+            <input type="radio" name="gender" value="FEMALE"><label>female</label>
+            
+            <input type="radio" name="gender" value="OTHERS"><label>others</label>
+            
+            
+            
+            
+
+
+        </div>
+        <div class="second">
+            <span>Resume</span>
+        <button class="resume">
+           
+            <input type="file" name="txtFile" multiple accept=".png">
+        </button><br>
+
+        <span >Current time</span>
+
+        <button class="time">
+
+            
+            <input type="time" placeholder="16:54">
+        </button><br>
+
+        <span >Week of submission</span>
+        <button class="week">
+
+            
+            <input type="week" placeholder="Week 01, 2025">
+        </button><br>
+
+        <span >Subjects</span>
+        <button class="subject">
+
+            
+            <input type="checkbox" name="subject1" value="SocialScience"><label>SocialScience</label>
+            <input type="checkbox" name="subject2" value="Maths"><label>Maths</label>
+            <input type="checkbox" name="subject3" value="Science"><label>Maths</label>
+            <input type="checkbox" name="subject4" value="History"><label>History</label>
+                
+        
+        </button>
+
+
+
+        </div>
+
+        <div class="submit" align="center">
+            <button>Submit</button>
+        </div>
+    </main>
+</body>
+</html>
