@@ -23,77 +23,83 @@
             <span><button type="button" class="btn btn-outline-dark">About</button></span>
         </div>
         <div>
-            <button type="button" class="btn btn-outline-light">Sign In</button>
-            <button type="button" class="btn btn-outline-primary">Sign Up</button>
+            <a href="index.html">
+                <button type="button" class="btn btn-outline-light">Sign In</button>
+            </a>
+            <a href="Registration.html">
+                <button type="button" class="btn btn-outline-primary">Sign Up</button>
+            </a>
         </div>
     </header>
-    <main>
-        <div align="center"><div class="rgform">Registration Form</div></div>
-        <div class="first">
-            <span>First Name</span>
-            <button class="name">
+
+    <section class="">
+        <div align="center">
+            <div class="rgform">Registration Form</div>
+        </div>
+        <div class="login-usrip">
+            <label>First Name</label>
+            <div>
                 <input type="text" name="txtTest" placeholder="First Name" pattern="[A-Z][A-Z a-z]{4.14}">
-            </button><br>
+            </div>
+        </div>
 
-            <span>Last Name</span>
-            <button class="name2">
+        <div class="login-usrip">
+            <label>Last Name</label>
+            <div>
                 <input type="text" name="txtTest" placeholder="Last Name" pattern="[A-Z][A-Z a-z]{4.14}">
-            </button><br>
+            </div>
+        </div>
 
-            <span>Email</span>
-            <button class="emailg">
+        <div class="login-usrip">
+            <label>Email</label>
+            <div>
                 <input type="email" name="txtEmail" placeholder="r0500482@gmail.com">
-            </button><br>
+            </div>
+        </div>
 
-            <span>D.O.B</span>
-            <button class="dob">
+        <div class="login-usrip">
+            <label>D.O.B</label>
+            <div>
                 <input type="date" name="txtDate">
-            </button>
-            <div class="gender">
-                <span>Gender :</span><br>
+            </div>
+        </div>
+
+        <div class="login-usrip">
+            <label>Gender : </label>
+            <div style="border: 1px solid #fff;width: 40%;padding-left: 10px;">
                 <input type="radio" name="gender" value="MALE"><label>Male</label><br>
                 <input type="radio" name="gender" value="FEMALE"><label>Female</label><br>
                 <input type="radio" name="gender" value="OTHERS"><label>Others</label>
             </div>
         </div>
-        <div class="second">
-            <span>Resume</span>
-            <button class="resume">
 
+        <div class="login-usrip">
+            <label>Resume</label>
+            <div>
                 <input type="file" name="txtFile" multiple accept=".png">
-            </button><br>
+            </div>
+        </div>
 
-            <span>Current time</span>
-
-            <button class="time">
-
-
-                <input type="time" placeholder="16:54">
-            </button><br>
-
-            <span>Week of submission</span>
-            <button class="week">
-
-
+        <div class="login-usrip">
+            <label>Week of submission</label>
+            <div>
                 <input type="week" placeholder="Week 01, 2025">
-            </button><br>
+            </div>
+        </div>
 
-            <span>Subjects</span>
-            <button class="subject">
-
-
-                <input type="checkbox" name="subject1" value="SocialScience"><label>SocialScience</label>
-                <input type="checkbox" name="subject2" value="Maths"><label>Maths</label>
-                <input type="checkbox" name="subject3" value="Science"><label>Maths</label>
+        <div class="login-usrip">
+            <label>Subjects</label>
+            <div style="border: 1px solid #fff;width: 40%;padding-left: 10px;">
+                <input type="checkbox" name="subject1" value="SocialScience"><label>SocialScience</label><br>
+                <input type="checkbox" name="subject2" value="Maths"><label>Maths</label><br>
+                <input type="checkbox" name="subject3" value="Science"><label>Maths</label><br>
                 <input type="checkbox" name="subject4" value="History"><label>History</label>
-
-
-            </button>
+            </div>
         </div>
 
         <div class="submit" style="margin-left: 12%;">
             <button>Submit</button>
         </div>
-    </main>
+    </section>
 </body>
 </html>
